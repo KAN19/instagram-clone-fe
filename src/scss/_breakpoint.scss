@@ -1,0 +1,14 @@
+@use "./variables" as *;
+
+@mixin mobile {
+	@media only screen and (max-width: $mobile-width) {
+		@content;
+	}
+}
+
+// screen is min size tablet width
+@mixin greater-equal-tablet {
+	@media only screen and (min-width: $tablet-width) {
+		@content;
+	}
+}
