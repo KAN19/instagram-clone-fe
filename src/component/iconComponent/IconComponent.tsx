@@ -27,10 +27,12 @@ export default function IconComponent({
 	// };
 
 	return (
-		<Link to={`${link ? link : "#"}`}>
-			{/* <div onClick={onClick}> */}
-			<Icon style={style ? style : defaultStyle} />
-			{/* </div> */}
-		</Link>
+		// <Link to={`${link ? link : "#"}`}>
+		<div>
+			<Icon
+				style={style ? { ...defaultStyle, ...style } : defaultStyle}
+			/>
+		</div>
+		// </Link>
 	);
 }

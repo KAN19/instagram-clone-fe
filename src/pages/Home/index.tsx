@@ -1,3 +1,4 @@
+import FeedCard from "component/feed-card";
 import Header from "component/header/Header";
 import StoryCard from "component/story-card/StoryCard";
 import StorySection from "component/story-card/StorySection";
@@ -8,14 +9,14 @@ type Props = {};
 export default function HomePage({}: Props) {
 	return (
 		<div className="md:w-[75%] flex mx-auto">
-			<div className="flex flex-col flex-grow-[2]">
+			<div className="flex flex-col flex-[0.65]">
 				<StorySection />
 
-				<div>News feed</div>
+				<FeedCard />
 			</div>
 
 			{/* Suggestion */}
-			<div className="flex-grow-[1] hidden md:flex">suggets</div>
+			<div className="flex-[0.35] hidden md:flex">suggets</div>
 		</div>
 	);
 }
